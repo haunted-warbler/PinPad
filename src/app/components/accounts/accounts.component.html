@@ -1,0 +1,24 @@
+<div class="accounts-container">
+    <div class="account-details">
+        <div class="user-info" tabindex="0" [attr.aria-label]="accountsContent?.hello + ' ' + userDetails?.firstName + ' ' + userDetails?.lastName">
+            <span [innerHTML]="accountsContent?.hello"></span>
+            <span class="account-name fname" [innerHTML]="userDetails?.firstName"></span>
+            <span class="account-name" [innerHTML]="userDetails?.lastName"></span>
+        </div>
+        <div class="user-info" tabindex="0" [attr.aria-label]="accountsContent?.dob + ' ' + userDetails?.dob">
+            <span [innerHTML]="accountsContent?.dob"></span>
+            <span class="account-dob" [innerHTML]="userDetails?.dob | date"></span>
+        </div>
+    </div>
+     <div class="row"> 
+        <div class="col account-balance mr" tabindex="0" [attr.aria-label]="accountsContent?.savings + ' ' + userDetails?.savingsBalance">
+            <div [innerHTML]="accountsContent?.savings"></div>
+            <div class="amount-balance" [innerHTML]="userDetails?.savingsBalance | currency"></div>
+        </div>
+
+        <div class="col account-balance" tabindex="0" [attr.aria-label]="accountsContent?.checking + ' ' + userDetails?.checkingBalance">
+            <div [innerHTML]="accountsContent?.checking"></div>
+            <div class="amount-balance" [innerHTML]="userDetails?.checkingBalance | currency"></div>
+        </div>
+    </div>
+</div>

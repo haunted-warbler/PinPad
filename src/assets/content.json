@@ -1,0 +1,15 @@
+{
+    "pinPad": {
+        "pinLabel": "Please enter your PIN",
+        "errorMsg": "Enter a valid PIN.",
+        "clear": "Clear",
+        "enter": "Enter",
+        "zero": "0"
+    },
+    "accounts": {
+        "hello": "Hello,",
+        "dob": "Date of birth:",
+        "savings": "Savings Account:",
+        "checking": "Checking Account:"
+    }
+}

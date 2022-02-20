@@ -1,0 +1,14 @@
+<div class="pin-container">
+    <input type="text" class="pin-number" id="passcode" name="passcode" [attr.aria-label]="pinPadContent?.pinLabel" [(ngModel)]="passcode" maxlength="4" [ngClass]="maxLimit ? 'max-length': 'rm-b'"/>
+    <div *ngIf="pinError && passcode.length === 4" class="pin-error" id="pinError" [attr.aria-label]="pinPadContent?.errorMsg" [innerHTML]="pinPadContent?.errorMsg"></div>
+  <div class="row">
+    <div class="col btn" *ngFor="let number of counter(9);let i = index">
+      <div class="opt-num" [attr.aria-label]="i+1" role="button" tabindex="0" (click)="getValue(i+1)" [innerHTML]="i+1"></div>
+    </div>
+  </div>
+  <div class="row">
+    <button [disabled]="passcode.length === 0" class="col btn options" (click)="removeLast()" [attr.aria-label]="pinPadContent?.clear" [innerHTML]="pinPadContent?.clear"></button>
+    <div class="col btn opt-num" [attr.aria-label]="0" role="button" tabindex="0" (click)="getValue(0)" [innerHTML]="pinPadContent?.zero"></div>
+    <button [disabled]="passcode.length !== 4" class="col btn options" [attr.aria-label]="pinPadContent?.enter" [innerHTML]="pinPadContent?.enter" (click)="validateUser()"></button>
+  </div>
+</div>

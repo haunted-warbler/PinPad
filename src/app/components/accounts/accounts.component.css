@@ -1,0 +1,50 @@
+.accounts-container{
+    max-width: 70%;
+    background-color: #fff;
+    margin: 10rem auto;
+    padding: 2rem;
+    box-shadow: 0.5rem 0.5rem 1rem #000;
+}
+
+.account-details {
+    font-size: 1.5rem;
+}
+
+.user-info {
+    margin-bottom: 1.5rem;
+}
+
+.account-name {
+    font-size: 2rem;
+    font-weight: 400;
+}
+.fname {
+    margin: 0 0.5rem;
+
+}
+
+.account-dob {
+    font-size: 2rem;
+    font-weight: 400;
+    margin: 0 0.5rem;
+}
+
+.account-balance { 
+    display: inline-block;
+    width: 48%;
+    border: 10rem black;
+    border-radius: 0.5rem;
+    background: rgb(168, 167, 167);
+    font-size: 1.5rem;
+    padding:1rem;
+}
+
+.mr {
+    margin-right: 4%;
+}
+
+.amount-balance {
+    padding: 1rem 0;
+    font-size: 3rem;
+    font-weight: 800;
+}

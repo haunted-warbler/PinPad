@@ -1,0 +1,71 @@
+.pin-container {
+  max-width: 30rem;
+  height: 40rem;
+  margin: 10rem auto 0;
+  background-color: #fff;
+  border-radius: 2rem;
+  padding: 2rem 1rem;
+  box-shadow: 0.5rem 0.5rem 1rem #000;
+}
+
+.pin-number {
+  width: 100%;
+  height: 8rem;
+  font-size: 4rem;
+  font-weight: bold;
+  text-align: center;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+}
+.row > * {
+  text-align: center;
+  flex: 1 1 33%;
+}
+
+.btn {
+  height: 7rem;
+  line-height: 7rem;
+}
+
+.btn:hover {
+  background-color: rgb(240, 230, 230);
+  transform: translateY(-0.2rem);
+  box-shadow: 0 1rem 1rem rgba(0, 0, 0, 0.2);
+}
+
+
+.btn:active {
+  transform: translateY(-0.1rem);
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2);
+}
+
+.opt-num {
+  font-size: 3rem;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.options {
+  font-size: 2rem;
+  font-weight: 500;
+  background-color: #fff;
+  border: none;
+  cursor: pointer;   
+}
+
+.max-length{
+  border: 0.3rem solid red ;
+}
+
+.pin-error {
+  color: red;
+  font-size: 1rem;
+  text-align: center;
+}
+
+.rm-b {
+  border: none;
+}
